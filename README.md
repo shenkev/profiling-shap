@@ -6,7 +6,8 @@
 ## Summary of Results
 
 ```
-Effective runtimes (variables that cannot be the bottleneck in computation time are not included, they cannot be the bottleneck because xgboost training would be much slower than SHAP).
+Effective runtimes (variables that cannot be the bottleneck in computation time are not included,
+they cannot be the bottleneck because xgboost training would be much slower than SHAP).
 
 SHAP = O(N^2)
 
@@ -23,6 +24,8 @@ SHAP = 0.03s
 SHAP Interaction = 1.87s
 
 ```
+
+### How large can each variable be?
 
 - Up to N=100,000 samples is reasonable to run for SHAP, N=10,000 for SHAP Interaction (you might get away with more if you distribute SHAP computation or use fewer than 100 trees, 30 max depth).
 - Up to P=inf for SHAP (training xgboost will be slower than SHAP when P is large), P=100,000 for SHAP Interaction
