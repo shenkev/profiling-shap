@@ -27,7 +27,7 @@ SHAP Interaction = 1.87s
 
 ### How large can each variable be?
 
-- Up to N=100,000 samples is reasonable to run for SHAP, N=10,000 for SHAP Interaction (you might get away with more if you distribute SHAP computation or use fewer than 100 trees, 30 max depth).
+- Up to N=100,000 samples is reasonable to run for SHAP, N=10,000 for SHAP Interaction (you might get away with more if you distribute SHAP computation).
 - Up to P=inf for SHAP (training xgboost will be slower than SHAP when P is large), P=100,000 for SHAP Interaction
 - Up to R=inf for both SHAP and SHAP Interaction (training xgboost will be slower than SHAP when R is large)
 - Up to D=inf for both SHAP and SHAP Interaction (training xgboost will be slower than SHAP when D is large)
