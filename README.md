@@ -1,5 +1,8 @@
 # profiling-shap
 
+- Python 3.6.9
+- shap 0.30.2
+
 ## Summary of Results
 
 ```
